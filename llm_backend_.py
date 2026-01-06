@@ -6,11 +6,11 @@ from groq import Groq
 from sentence_transformers import SentenceTransformer, util
 
 from huggingface_hub import login
-login("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")
+login("")
 
 # Load data and model
 embedding_model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
-groq_api_key = "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"
+groq_api_key = ""
 client = Groq(api_key=groq_api_key)
 
 DB_FILE = "data_2010_temp.db"
